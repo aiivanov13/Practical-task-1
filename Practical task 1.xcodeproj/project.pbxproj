@@ -10,6 +10,7 @@
 		F6384C202A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C1E2A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf */; };
 		F6384C212A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C1F2A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf */; };
 		F6384C232A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C222A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf */; };
+		F6384C252A3DA65000988DA6 /* CALayer + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */; };
 		F6B013CA2A34EA96004B7EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B013C92A34EA96004B7EC5 /* AppDelegate.swift */; };
 		F6B013CE2A34EA96004B7EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B013CD2A34EA96004B7EC5 /* ViewController.swift */; };
 		F6B013D32A34EA97004B7EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B013D22A34EA97004B7EC5 /* Assets.xcassets */; };
@@ -20,6 +21,7 @@
 		F6384C1E2A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; };
 		F6384C1F2A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
 		F6384C222A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; };
+		F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Extensions.swift"; sourceTree = "<group>"; };
 		F6B013C62A34EA96004B7EC5 /* Practical task 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practical task 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B013C92A34EA96004B7EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B013CD2A34EA96004B7EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 		F6384C1A2A3D90CB00988DA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -192,6 +195,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6B013CE2A34EA96004B7EC5 /* ViewController.swift in Sources */,
+				F6384C252A3DA65000988DA6 /* CALayer + Extensions.swift in Sources */,
 				F6B013CA2A34EA96004B7EC5 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

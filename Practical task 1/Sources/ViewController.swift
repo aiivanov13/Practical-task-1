@@ -58,6 +58,7 @@ class ViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = .white
         view.layer.cornerRadius = 20
+        view.layer.addShadows()
         view.translatesAutoresizingMaskIntoConstraints = false
         view.addSubview(titleLabel)
         view.addSubview(descriptionLabel)
@@ -78,7 +79,7 @@ class ViewController: UIViewController {
     // MARK: - Setups
 
     private func setupView() {
-        view.backgroundColor = .white
+        view.backgroundColor = UIColor(red: 0.99, green: 0.99, blue: 0.99, alpha: 1.00)
     }
 
     private func setupHierarchy() {
