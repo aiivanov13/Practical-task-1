@@ -33,9 +33,10 @@ class ViewController: UIViewController {
 
     private lazy var descriptionLabel: UILabel = {
         let label = UILabel()
-        label.text = "Portland ugh fashion axe Helvetica. Echo \n Park Austin gastropub roof party."
+        label.text = "Portland ugh fashion axe Helvetica. Echo Park Austin gastropub roof party."
         label.font = UIFont(name: "GTWalsheimPro-Regular", size: 14)
         label.numberOfLines = 0
+        label.lineBreakMode = .byWordWrapping
         label.textAlignment = .center
         label.textColor = UIColor(red: 0.11, green: 0.13, blue: 0.18, alpha: 1.00)
         label.translatesAutoresizingMaskIntoConstraints = false
