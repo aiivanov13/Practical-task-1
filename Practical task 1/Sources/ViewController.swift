@@ -45,10 +45,11 @@ class ViewController: UIViewController {
     }()
 
     private lazy var interestedButton: UIButton = {
-        let button = UIButton()
+        let button = UIButton(type: .system)
         button.setTitle("I'm interested", for: .normal)
         button.titleLabel?.font = UIFont(name: "GTWalsheimPro-Medium", size: 15)
-        button.backgroundColor = UIColor(red: 1, green: 0.2, blue: 0.471, alpha: 1)
+        button.tintColor = .white
+        button.backgroundColor = UIColor(named: "AccentColor")
         button.layer.cornerRadius = 10
         button.translatesAutoresizingMaskIntoConstraints = false
 
