@@ -49,8 +49,9 @@ class ViewController: UIViewController {
         button.setTitle("I'm interested", for: .normal)
         button.titleLabel?.font = UIFont(name: "GTWalsheimPro-Medium", size: 15)
         button.tintColor = .white
-        button.backgroundColor = UIColor(named: "AccentColor")
+        button.backgroundColor = UIColor(named: "mainColor")
         button.layer.cornerRadius = 10
+        button.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
         button.translatesAutoresizingMaskIntoConstraints = false
 
         return button
@@ -78,10 +79,15 @@ class ViewController: UIViewController {
         setupLayout()
     }
 
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        navigationController?.isNavigationBarHidden = true
+    }
+
     // MARK: - Setups
 
     private func setupView() {
-        view.backgroundColor = UIColor(red: 0.99, green: 0.99, blue: 0.99, alpha: 1.00)
+        view.backgroundColor = UIColor(named: "backgroundColor")
     }
 
     private func setupHierarchy() {
@@ -109,5 +115,12 @@ class ViewController: UIViewController {
             interestedButton.leftAnchor.constraint(equalTo: descriptionView.leftAnchor, constant: (view.bounds.width - (view.bounds.width * 0.74)) / 2),
             interestedButton.rightAnchor.constraint(equalTo: descriptionView.rightAnchor, constant: -(view.bounds.width - (view.bounds.width * 0.74)) / 2)
         ])
+    }
+
+    // MARK: - Action
+
+    @objc private func buttonTapped() {
+        let settingsViewController = SettingsViewController()
+        navigationController?.pushViewController(settingsViewController, animated: true)
     }
 }
