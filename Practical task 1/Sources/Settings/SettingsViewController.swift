@@ -139,7 +139,7 @@ extension SettingsViewController: UITableViewDataSource {
         guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SettingsTableViewCell else { return UITableViewCell() }
 
         if options?[indexPath.row] == options?.last {
-            cell.separatorInset = UIEdgeInsets(top: 0, left: view.bounds.width, bottom: 0, right: 0)
+            cell.separatorInset = UIEdgeInsets(top: .zero, left: view.bounds.width, bottom: .zero, right: .zero)
         }
 
         cell.option = options?[indexPath.row]
