@@ -9,6 +9,8 @@ import UIKit
 import SnapKit
 
 class SettingsViewController: UIViewController {
+    private var options: [Option]?
+    private let customNavigationView = CustomNavigationView()
 
     // MARK: - UI Elements
 
@@ -16,10 +18,10 @@ class SettingsViewController: UIViewController {
         let view = UIView()
         view.backgroundColor = UIColor(named: "mainColor")
         view.layer.cornerRadius = 20
+        view.layer.addShadows(color: UIColor(named: "mainColor")?.cgColor)
         view.translatesAutoresizingMaskIntoConstraints = false
         return view
     }()
-    
 
     private lazy var notificationImage: UIImageView = {
         let image = UIImage(named: "bell")
@@ -56,11 +58,12 @@ class SettingsViewController: UIViewController {
     }()
 
     private lazy var tableView: UITableView = {
-        let tableView = UITableView()
+        let tableView = UITableView(frame: .zero, style: .plain)
         tableView.dataSource = self
         tableView.delegate = self
         tableView.register(SettingsTableViewCell.self, forCellReuseIdentifier: "cell")
-        tableView.backgroundColor = .cyan
+        tableView.backgroundColor = .clear
+        tableView.separatorInset = UIEdgeInsets(top: .zero, left: 92, bottom: .zero, right: 25)
         tableView.translatesAutoresizingMaskIntoConstraints = false
         return tableView
     }()
@@ -69,38 +72,24 @@ class SettingsViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        options = Option.options
         setupView()
-        setupNavigationBar()
         setupHierarchy()
         setupLayout()
     }
 
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
-        navigationController?.isNavigationBarHidden = false
     }
 
     // MARK: - Setup
 
     private func setupView() {
         view.backgroundColor = UIColor(named: "backgroundColor")
-        title = "Settings"
-    }
-
-    private func setupNavigationBar() {
-        navigationController?.navigationBar.prefersLargeTitles = true
-        navigationController?.navigationBar.backgroundColor = .white
-        navigationController?.navigationBar.layer.cornerRadius = 20
-        navigationController?.navigationBar.clipsToBounds = true
-        let backButton = UIImage(systemName: "arrow.left")
-        navigationController?.navigationBar.backIndicatorImage = backButton
-        navigationController?.navigationBar.backIndicatorTransitionMaskImage = backButton
-        navigationController?.navigationBar.backItem?.title = ""
-        let newBackButton = UIBarButtonItem(title: "Settings", style: .plain, target: nil, action: nil)
-        navigationItem.backBarButtonItem = newBackButton
     }
 
     private func setupHierarchy() {
+        view.addSubview(customNavigationView)
         notificationStack.addArrangedSubview(descriptionLabel)
         notificationStack.addArrangedSubview(titleLabel)
         notificationView.addSubview(notificationStack)
@@ -110,14 +99,19 @@ class SettingsViewController: UIViewController {
     }
 
     private func setupLayout() {
+        customNavigationView.snp.makeConstraints { make in
+            make.top.leading.trailing.equalTo(view)
+            make.height.equalTo(110)
+        }
+        
         notificationView.snp.makeConstraints { make in
-            make.top.equalTo(view.snp_topMargin)
+            make.top.equalTo(customNavigationView.snp.bottom)
             make.leading.trailing.equalTo(view).inset(25)
             make.height.equalTo(88)
         }
 
         notificationImage.snp.makeConstraints { make in
-            make.top.equalTo(notificationView.snp.top)
+            make.top.equalTo(notificationView.snp.top).offset(-11)
             make.trailing.equalTo(notificationView).inset(18)
             make.width.height.equalTo(72)
         }
@@ -138,11 +132,12 @@ class SettingsViewController: UIViewController {
 
 extension SettingsViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        0
+        options?.count ?? 0
     }
 
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? SettingsTableViewCell else { return UITableViewCell() }
+        cell.option = options?[indexPath.row]
         return cell
     }
 }
@@ -150,5 +145,11 @@ extension SettingsViewController: UITableViewDataSource {
 // MARK: - UITableView Delegate
 
 extension SettingsViewController: UITableViewDelegate {
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        81
+    }
 
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        tableView.deselectRow(at: indexPath, animated: true)
+    }
 }
