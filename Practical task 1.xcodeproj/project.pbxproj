@@ -10,24 +10,35 @@
 		F6384C202A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C1E2A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf */; };
 		F6384C212A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C1F2A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf */; };
 		F6384C232A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F6384C222A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf */; };
-		F6384C252A3DA65000988DA6 /* CALayer + Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */; };
+		F6384C252A3DA65000988DA6 /* CALayer+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6384C242A3DA65000988DA6 /* CALayer+Extensions.swift */; };
 		F6B013CA2A34EA96004B7EC5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B013C92A34EA96004B7EC5 /* AppDelegate.swift */; };
 		F6B013CE2A34EA96004B7EC5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6B013CD2A34EA96004B7EC5 /* ViewController.swift */; };
 		F6B013D32A34EA97004B7EC5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F6B013D22A34EA97004B7EC5 /* Assets.xcassets */; };
 		F6B013D62A34EA97004B7EC5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F6B013D42A34EA97004B7EC5 /* LaunchScreen.storyboard */; };
+		F6FC75C42A50360700450DFD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC75C32A50360700450DFD /* SettingsViewController.swift */; };
+		F6FC75C62A50364E00450DFD /* SettingsTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC75C52A50364E00450DFD /* SettingsTableViewCell.swift */; };
+		F6FC75CB2A503B1800450DFD /* SnapKit in Frameworks */ = {isa = PBXBuildFile; productRef = F6FC75CA2A503B1800450DFD /* SnapKit */; };
+		F6FC75CD2A506EAA00450DFD /* CellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC75CC2A506EAA00450DFD /* CellModel.swift */; };
+		F6FC75CF2A50B6B900450DFD /* CustomSwitch.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC75CE2A50B6B900450DFD /* CustomSwitch.swift */; };
+		F6FC75D52A51E32B00450DFD /* CustomNavigationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F6FC75D42A51E32B00450DFD /* CustomNavigationView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		F6384C1E2A3D9D8000988DA6 /* GTWalsheimPro-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Bold.ttf"; sourceTree = "<group>"; };
 		F6384C1F2A3D9D8000988DA6 /* GTWalsheimPro-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Regular.ttf"; sourceTree = "<group>"; };
 		F6384C222A3D9E6B00988DA6 /* GTWalsheimPro-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "GTWalsheimPro-Medium.ttf"; sourceTree = "<group>"; };
-		F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer + Extensions.swift"; sourceTree = "<group>"; };
+		F6384C242A3DA65000988DA6 /* CALayer+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+Extensions.swift"; sourceTree = "<group>"; };
 		F6B013C62A34EA96004B7EC5 /* Practical task 1.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Practical task 1.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F6B013C92A34EA96004B7EC5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F6B013CD2A34EA96004B7EC5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F6B013D22A34EA97004B7EC5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F6B013D52A34EA97004B7EC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F6B013D72A34EA97004B7EC5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F6FC75C32A50360700450DFD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
+		F6FC75C52A50364E00450DFD /* SettingsTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsTableViewCell.swift; sourceTree = "<group>"; };
+		F6FC75CC2A506EAA00450DFD /* CellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CellModel.swift; sourceTree = "<group>"; };
+		F6FC75CE2A50B6B900450DFD /* CustomSwitch.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomSwitch.swift; sourceTree = "<group>"; };
+		F6FC75D42A51E32B00450DFD /* CustomNavigationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,12 +46,30 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F6FC75CB2A503B1800450DFD /* SnapKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F61971332A52CA7C00DE1BD3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC75CC2A506EAA00450DFD /* CellModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		F61971342A52CA8B00DE1BD3 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				F6FC75CE2A50B6B900450DFD /* CustomSwitch.swift */,
+				F6FC75C52A50364E00450DFD /* SettingsTableViewCell.swift */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
 		F6384C162A3D909500988DA6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
@@ -61,7 +90,8 @@
 		F6384C182A3D90B600988DA6 /* Sources */ = {
 			isa = PBXGroup;
 			children = (
-				F6B013CD2A34EA96004B7EC5 /* ViewController.swift */,
+				F6FC75C82A5037CD00450DFD /* StartScreen */,
+				F6FC75C72A5037BE00450DFD /* Settings */,
 			);
 			path = Sources;
 			sourceTree = "<group>";
@@ -77,7 +107,7 @@
 		F6384C1A2A3D90CB00988DA6 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F6384C242A3DA65000988DA6 /* CALayer + Extensions.swift */,
+				F6384C242A3DA65000988DA6 /* CALayer+Extensions.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -121,6 +151,25 @@
 			path = "Practical task 1";
 			sourceTree = "<group>";
 		};
+		F6FC75C72A5037BE00450DFD /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				F61971342A52CA8B00DE1BD3 /* Cell */,
+				F61971332A52CA7C00DE1BD3 /* Model */,
+				F6FC75C32A50360700450DFD /* SettingsViewController.swift */,
+				F6FC75D42A51E32B00450DFD /* CustomNavigationView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		F6FC75C82A5037CD00450DFD /* StartScreen */ = {
+			isa = PBXGroup;
+			children = (
+				F6B013CD2A34EA96004B7EC5 /* ViewController.swift */,
+			);
+			path = StartScreen;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -137,6 +186,9 @@
 			dependencies = (
 			);
 			name = "Practical task 1";
+			packageProductDependencies = (
+				F6FC75CA2A503B1800450DFD /* SnapKit */,
+			);
 			productName = "Practical task 1";
 			productReference = F6B013C62A34EA96004B7EC5 /* Practical task 1.app */;
 			productType = "com.apple.product-type.application";
@@ -165,6 +217,9 @@
 				Base,
 			);
 			mainGroup = F6B013BD2A34EA96004B7EC5;
+			packageReferences = (
+				F6FC75C92A503B1800450DFD /* XCRemoteSwiftPackageReference "SnapKit" */,
+			);
 			productRefGroup = F6B013C72A34EA96004B7EC5 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -195,8 +250,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				F6B013CE2A34EA96004B7EC5 /* ViewController.swift in Sources */,
-				F6384C252A3DA65000988DA6 /* CALayer + Extensions.swift in Sources */,
+				F6384C252A3DA65000988DA6 /* CALayer+Extensions.swift in Sources */,
 				F6B013CA2A34EA96004B7EC5 /* AppDelegate.swift in Sources */,
+				F6FC75D52A51E32B00450DFD /* CustomNavigationView.swift in Sources */,
+				F6FC75C62A50364E00450DFD /* SettingsTableViewCell.swift in Sources */,
+				F6FC75CF2A50B6B900450DFD /* CustomSwitch.swift in Sources */,
+				F6FC75C42A50360700450DFD /* SettingsViewController.swift in Sources */,
+				F6FC75CD2A506EAA00450DFD /* CellModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -406,6 +466,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		F6FC75C92A503B1800450DFD /* XCRemoteSwiftPackageReference "SnapKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/SnapKit/SnapKit";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		F6FC75CA2A503B1800450DFD /* SnapKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = F6FC75C92A503B1800450DFD /* XCRemoteSwiftPackageReference "SnapKit" */;
+			productName = SnapKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = F6B013BE2A34EA96004B7EC5 /* Project object */;
 }
