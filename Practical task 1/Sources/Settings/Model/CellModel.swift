@@ -12,7 +12,7 @@ enum AccessoryView {
     case versionLabel
 }
 
-struct Option {
+struct Option: Equatable {
     var image: UIImage?
     var title: String?
     var description: String?
